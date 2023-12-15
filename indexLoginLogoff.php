@@ -38,9 +38,6 @@
             <img src="./webroot/images/mapa.png" alt="NO SE VE.">
             <br>
             <a href="./codigoPHP/Login.php">LOGIN</a>
-            <a href="./scriptDB/BorraDAW202DBLoginLogoffTema5.php">Ejecutar</a>
-            <a href="./scriptDB/CargaInicialDAW202DBLoginLogoffTema5">Ejecutar</a>
-            <a href="./scriptDB/CreaDB202DWESLoginLogoffTema5">Ejecutar</a>
         </main>
         <footer>
             <p>2023-2024 © Todos los derechos reservados. <a href="../202DWESProyectoDWES/indexProyectoDWES.php">Erika Martínez Pérez</a></p>

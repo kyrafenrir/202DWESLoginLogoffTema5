@@ -21,6 +21,13 @@
                 margin-bottom: 20px;
             }
             
+            main a{
+                color: white;
+            }
+            
+            footer a{
+                color: #999;
+            }
         </style>
     </head>
     <body>

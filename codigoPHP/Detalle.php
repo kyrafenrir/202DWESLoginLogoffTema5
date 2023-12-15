@@ -39,6 +39,7 @@ if (isset($_REQUEST['atras'])) {
                 width: 300px;
                 height: 30px;
                 margin-top: 10px; 
+                margin-left: 480px;
                 font-weight: bold;
             }
             
@@ -46,6 +47,10 @@ if (isset($_REQUEST['atras'])) {
                 color: #999;
                 background: #222;
                 text-decoration: dashed;
+            }
+            
+            .ejercicio{
+                margin-left: 480px;
             }
         </style>
     </head>
@@ -57,9 +62,9 @@ if (isset($_REQUEST['atras'])) {
         <main>
             <div class="container mt-3">
                 <div class="row d-flex justify-content-start">
-                    <div class="col">
+                    <div>
                         <form name="Programa" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                            <button class="btn btn-secondary" aria-disabled="true" type="submit" name="atras">Atras</button>
+                            <button aria-disabled="true" type="submit" name="atras">Atras</button>
                         </form>        
                     </div>
                     <div class="col">

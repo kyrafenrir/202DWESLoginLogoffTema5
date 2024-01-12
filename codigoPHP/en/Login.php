@@ -6,8 +6,8 @@
  * 
  */
 // Incluyo la librería de validación para comprobar los campos y el fichero de configuración de la BD
-require_once '../core/231018libreriaValidacion.php';
-require_once "../config/configDB.php";
+require_once '../../core/231018libreriaValidacion.php';
+require_once "../../config/configDB.php";
 
 $entradaOK = true;
 
@@ -95,11 +95,11 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="../webroot/css/style.css">
+            <link rel="stylesheet" type="text/css" href="../../webroot/css/style.css">
             <title>Erika Martínez Pérez - DWES</title>
             <style>
                 .inicio{
-                    padding-left: 36%;
+                    padding-left: 38%;
                     padding-top: 5%;
                     font-size: 1.6rem;
                     font-weight: bold;
@@ -107,7 +107,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
                 }
                 
                 .inicio label:nth-of-type(1){
-                    margin-right: 43px;
+                    margin-right: 56px;
                 }
                 
                 legend{
@@ -117,7 +117,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
                 
                 button{
                     width: 300px; height: 30px;
-                    margin-left: 120px;
+                    margin-left: 100px;
                     margin-top: 20px;
                     font-weight: bold;
                 }
@@ -129,7 +129,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
         </head>
         <body>
             <header class="text-center">
-                <h1>Aplicación LoginLogoffTema5:</h1>
+                <h1>Aplication LoginLogoffUnit5:</h1>
             </header>
             <main>
                 <div>
@@ -137,9 +137,9 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
                         <div class="inicio">
                             <!-- Codigo del formulario -->
                             <form name="controlAcceso" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                                    <legend>Iniciar Sesión</legend>
+                                    <legend>Log In</legend>
                                     <!-- CodDepartamento Obligatorio -->
-                                    <label for="user">Introduce usuario:</label>
+                                    <label for="user">Enter user:</label>
                                     <!-- El value contiene una operador ternario en el que por medio de un metodo 'isset()'
                                     comprobamos que exista la variable y no sea 'null'. En el caso verdadero devolveremos el contenido del campo
                                     que contiene '$_REQUEST' , en caso falso sobrescribirá el campo a '' .-->
@@ -150,7 +150,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
                                         }
                                     ?> <!-- Aquí comprobamos que el campo del array '$aErrores' no está vacío, si es así, mostramos el error. -->
                                     <!-- CodDepartamento Obligatorio -->
-                                    <br><label for="password">Introduce contraseña:</label>
+                                    <br><label for="password">Enter password:</label>
                                     <!-- El value contiene una operador ternario en el que por medio de un metodo 'isset()'
                                          comprobamos que exista la variable y no sea 'null'. En el caso verdadero devolveremos el contenido del campo
                                          que contiene '$_REQUEST' , en caso falso sobrescribirá el campo a '' .-->
@@ -161,7 +161,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
                                         }
                                     ?> <!-- Aquí comprobamos que el campo del array '$aErrores' no está vacío, si es así, mostramos el error. -->
                                     <div>
-                                        <button  type="submit" name="Login">Iniciar Sesión</button>
+                                        <button  type="submit" name="Login">Log In</button>
                                     </div>
                                 </form>
                                 <?php
@@ -173,7 +173,7 @@ if ($entradaOK) { // Si el usuario ha rellenado el formulario correctamente rell
             </div>
         </main>
         <footer>
-            <p>2023-2024 © Todos los derechos reservados. <a href="../indexLoginLogoff.php">Erika Martínez Pérez</a></p>
+            <p>2023-2024 © All rights reserved. <a href="https://github.com/kyrafenrir/202DWESLoginLogoffTema5/blob/master/codigoPHP/Login.php">Erika Martínez Pérez</a></p>
         </footer>
     </body>
 </html>

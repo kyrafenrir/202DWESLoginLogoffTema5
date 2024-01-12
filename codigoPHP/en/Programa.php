@@ -39,7 +39,7 @@ if (isset($_REQUEST['detalle'])) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../webroot/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../webroot/css/style.css">
         <title>Erika Martínez Pérez - DWES</title>
         <style>
             main{
@@ -66,7 +66,7 @@ if (isset($_REQUEST['detalle'])) {
     </head>
     <body>
         <header class="text-center">
-            <h1>Aplicación LoginLogoffTema5:</h1>
+            <h1>Aplication LoginLogoffUnit5:</h1>
         </header>
         <main>
             <div class="container mt-3">
@@ -83,24 +83,24 @@ if (isset($_REQUEST['detalle'])) {
                          * 
                          */
                         if ($_SESSION['NumeroConexiones'] == 1) {
-                            echo("<div>Bienvenid@ ".$_SESSION['DescripcionUsuario']." esta es la ".$_SESSION['NumeroConexiones']." vez que te conectas.</div>");
+                            echo("<div>Wellcome ".$_SESSION['DescripcionUsuario']." this is the ".$_SESSION['NumeroConexiones']." time you have connected.</div>");
                         } else {
-                            echo("<div>Bienvenid@ ".$_SESSION['DescripcionUsuario']." esta es la ".$_SESSION['NumeroConexiones']." vez que te conectas. "
-                                . "usted se conectó por última vez el ".$_SESSION['FechaHoraUltimaConexionAnterior']."</div>");
+                            echo("<div>Wellcome ".$_SESSION['DescripcionUsuario']." this is the ".$_SESSION['NumeroConexiones']." time you have connected. "
+                                . "You last logged in on ".$_SESSION['FechaHoraUltimaConexionAnterior']."</div>");
                         }
                         ?> 
                     </div>
                     <div class="col">
                         <form name="Programa" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                            <button class="btn btn-secondary" aria-disabled="true" type="submit" name="salir">Cerrar Sesión</button><br>
-                            <button class="btn btn-secondary" aria-disabled="true" type="submit" name="detalle">Detalle</button>
+                            <button class="btn btn-secondary" aria-disabled="true" type="submit" name="salir">Log Off</button><br>
+                            <button class="btn btn-secondary" aria-disabled="true" type="submit" name="detalle">Details</button>
                         </form>        
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            <p>2023-2024 © Todos los derechos reservados. <a href="../indexLoginLogoff.php">Erika Martínez Pérez</a></p>
+            <p>2023-2024 © All rights reserved. <a href="https://github.com/kyrafenrir/202DWESLoginLogoffTema5/blob/master/codigoPHP/Programa.php">Erika Martínez Pérez</a></p>
         </footer>
     </body>
 </html>

@@ -31,9 +31,8 @@ if (isset($_REQUEST['atras'])) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../webroot/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../webroot/css/style.css">
         <title>Erika Martínez Pérez - DWES</title>
-        <link rel="stylesheet" href="../webroot/css/style.css">
         <style>
             button{
                 width: 300px;
@@ -57,14 +56,14 @@ if (isset($_REQUEST['atras'])) {
 
     <body>
         <header class="text-center">
-            <h1>Aplicación LoginLogoffTema5:</h1>
+            <h1>Aplication LoginLogoffUnit5:</h1>
         </header>
         <main>
             <div class="container mt-3">
                 <div class="row d-flex justify-content-start">
                     <div>
                         <form name="Programa" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                            <button aria-disabled="true" type="submit" name="atras">Atras</button>
+                            <button aria-disabled="true" type="submit" name="atras">Back</button>
                         </form>        
                     </div>
                     <div class="col">
@@ -159,7 +158,7 @@ if (isset($_REQUEST['atras'])) {
             </div>
         </main>
         <footer>
-            <p>2023-2024 © Todos los derechos reservados. <a href="../indexLoginLogoff.php">Erika Martínez Pérez</a></p>
+            <p>2023-2024 © All rights reserved. <a href="https://github.com/kyrafenrir/202DWESLoginLogoffTema5/blob/master/codigoPHP/Detalle.php">Erika Martínez Pérez</a></p>
         </footer>
     </body>
 </html>
